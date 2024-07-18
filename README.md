@@ -30,14 +30,15 @@
 <a href='https://arxiv.org/abs/2406.01900'><img src='https://img.shields.io/badge/ArXiv-2406.01900-red'></a> 
 <a href='https://follow-your-emoji.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=mayuelala.FollowYourEmoji&left_color=green&right_color=red)  [![GitHub](https://img.shields.io/github/stars/mayuelala/FollowYourEmoji?style=social)](https://github.com/mayuelala/FollowYourEmoji,pko) 
 </div>
-<table class="center">
+
+<!-- <table class="center">
   <td><img src="https://follow-your-emoji.github.io/src/teaser/teaser.gif"></td>
   <tr>
     <td align="center" >🤪 For more results, visit our <a href="https://follow-your-emoji.github.io/"><strong>homepage</strong></td>
   <tr>
 </td>
 
-</table >
+</table > -->
 
 
 ## 📣 Updates
