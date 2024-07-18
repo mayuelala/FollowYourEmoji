@@ -138,7 +138,7 @@ def main(args, config):
     print('load model')
     load_model_state_dict(referencenet, f'{config.init_checkpoint}/referencenet.pth', 'referencenet')
     load_model_state_dict(unet, f'{config.init_checkpoint}/unet.pth', 'unet')
-    load_model_state_dict(lmk_guider, f'{config.init_checkpoint}/pose_guider.pth', 'lmk_guider')
+    load_model_state_dict(lmk_guider, f'{config.init_checkpoint}/lmk_guider.pth', 'lmk_guider')
 
     if config.enable_xformers_memory_efficient_attention:
         if is_xformers_available():
