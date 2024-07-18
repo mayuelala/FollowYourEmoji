@@ -80,9 +80,9 @@ CUDA_VISIBLE_DEVICES=0 python3 -m torch.distributed.run \
     infer.py \
     --config ./configs/infer.yaml \
     --model_path /path/to/model \
-    --input_path ./data/images \
-    --lmk_path ./data/mplmks \
-    --output_path ./data/out
+    --input_path your_own_images_path \
+    --lmk_path ./inference_temple/test_temple.npy  \
+    --output_path your_own_output_path
 ```
 
 ## 🤪 Make Your Emoji
@@ -99,9 +99,9 @@ CUDA_VISIBLE_DEVICES=0 python3 -m torch.distributed.run \
     infer.py \
     --config ./configs/infer.yaml \
     --model_path /path/to/model \
-    --input_path ./data/images \
+    --input_path your_own_images_path \
     --lmk_path  your_own_temple_path \
-    --output_path ./data/out
+    --output_path your_own_output_path
 ```
 
 
