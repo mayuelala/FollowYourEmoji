@@ -30,17 +30,20 @@
 <a href='https://arxiv.org/abs/2406.01900'><img src='https://img.shields.io/badge/ArXiv-2406.01900-red'></a> 
 <a href='https://follow-your-emoji.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=mayuelala.FollowYourEmoji&left_color=green&right_color=red)  [![GitHub](https://img.shields.io/github/stars/mayuelala/FollowYourEmoji?style=social)](https://github.com/mayuelala/FollowYourEmoji,pko) 
 </div>
+<table class="center">
+  <td><img src="https://follow-your-emoji.github.io/src/teaser/teaser.gif"></td>
+  <tr>
+    <td align="center" >🤪 For more results, visit our <a href="https://follow-your-emoji.github.io/"><strong>homepage</strong></td>
+  <tr>
+</td>
 
-<p align="center">
-  <img src="https://follow-your-emoji.github.io/src/teaser/teaser.gif" alt="showcase">
-  <br>
-  🤪 For more results, visit our <a href="https://follow-your-emoji.github.io/"><strong>homepage</strong></a> 🤪
-</p>
+</table >
+
 
 ## 📣 Updates
 
-- **[2023.07.18]** 🔥 Release `inference code`, `config` and `checkpoints`!
-- **[2023.06.07]** 🔥 Release Paper and Project page!
+- **[2024.07.18]** 🔥 Release `inference code`, `config` and `checkpoints`!
+- **[2024.06.07]** 🔥 Release Paper and Project page!
 
 ## 🤪 Gallery
 <img src="images/index.png" alt="Image 1">
@@ -58,7 +61,6 @@ pip install -r requirements.txt
 ### 2. Download pretrained weights
 
 [FollowYourEmoji] We also provide our pretrained checkpoints in [Huggingface](https://huggingface.co/YueMafighting/FollowYourEmoji). you could download them and put them into checkpoints folder to inference our model.
-
 
 
 ### 3. Inference 🚀
@@ -81,6 +83,26 @@ CUDA_VISIBLE_DEVICES=0 python3 -m torch.distributed.run \
     --lmk_path ./data/mplmks \
     --output_path ./data/out
 ```
+
+## 🤪 Make Your Emoji
+You can make your own emoji using our model. First, you need to make your emoji temple using MediaPipe. We provide the script in ```make_temple.ipynb```. You can replace the video path with your own emoji video and generate the ```.npy``` file.
+
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python3 -m torch.distributed.run \
+    --nnodes 1 \
+    --master_addr $LOCAL_IP \
+    --master_port 12345 \
+    --node_rank 0 \
+    --nproc_per_node 1 \
+    infer.py \
+    --config ./configs/infer.yaml \
+    --model_path /path/to/model \
+    --input_path ./data/images \
+    --lmk_path  your_own_temple_path \
+    --output_path ./data/out
+```
+
 
 ## 👨‍👩‍👧‍👦 Follow Family
 [Follow-Your-Pose](https://github.com/mayuelala/FollowYourPose): Pose-Guided text-to-Video Generation.

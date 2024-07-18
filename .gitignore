@@ -25,7 +25,7 @@ inp_videos/
 out_videos/
 .idea/
 
-*.ipynb
+# *.ipynb
 *.safetensors
 *.ckpt
 
