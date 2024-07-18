@@ -1,0 +1,50 @@
+# train
+resolution_w: 512
+resolution_h: 512
+video_length: 16
+enable_xformers_memory_efficient_attention: True
+seed: 12580
+weight_dtype: 'fp16'  # [fp16, fp32]
+enable_zero_snr: True
+# pretrained model
+base_model_path: 'sd-image-variations-diffusers'
+vae_model_path: 'sd-vae-ft-mse'
+image_encoder_path: 'sd-image-variations-diffusers/image_encoder'
+motion_module_path: 'AnimateDiff/mm_sd_v15_v2.ckpt'
+# for infer
+init_checkpoint: ''
+init_num: 0
+# model
+model:
+  unet_additional_kwargs:
+    use_inflated_groupnorm: True
+    unet_use_cross_frame_attention: False
+    unet_use_temporal_attention: False
+    use_motion_module: True
+    motion_module_resolutions:
+    - 1
+    - 2
+    - 4
+    - 8
+    motion_module_mid_block: True
+    motion_module_decoder_only: False
+    motion_module_type: Vanilla
+    motion_module_kwargs:
+      num_attention_heads: 8
+      num_transformer_block: 1
+      attention_block_types:
+      - Temporal_Self
+      - Temporal_Self
+      temporal_position_encoding: True
+      temporal_position_encoding_max_len: 32
+      temporal_attention_dim_div: 1
+    attention_mode: SpatialAtten # SpatialAtten/ReferOnlyAtten
+  referencenet_additional_kwargs:
+    info_mode: addRefImg
+scheduler:
+  num_train_timesteps: 1000
+  beta_start:          0.00085
+  beta_end:            0.012
+  beta_schedule:       "scaled_linear"
+  steps_offset:        1
+  clip_sample:         false

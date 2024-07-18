@@ -1,0 +1,33 @@
+nohup_out*
+data/
+output/
+mlruns/
+*.onnx
+/utils/tencentcloud-sdk-python/TENCENT_CLOUD_SECRET.txt
+TENCENT_CLOUD_SECRET.txt
+
+**/__pycache__/
+*.py[cod]
+
+# vim swapfile
+*.swp
+
+# iFT
+ft_local/
+*.zip
+
+.DS_Store
+
+logs/
+
+.ipynb_checkpoints/
+inp_videos/
+out_videos/
+.idea/
+
+*.ipynb
+*.safetensors
+*.ckpt
+
+/mmpose/ckpt/
+mmpose
