@@ -126,10 +126,10 @@ def main(args, config):
 
     image_encoder = CLIPVisionModelWithProjection.from_pretrained(config.image_encoder_path).to(dtype=weight_dtype, device="cuda")
 
-    referencenet = ReferenceNet2DConditionModel.from_pretrained_2d(config.base_model_path, subfolder="unet",
+    referencenet = ReferenceNet2DConditionModel.from_pretrained_2d(config.base_model_path,
                                                                    referencenet_additional_kwargs=config.model.referencenet_additional_kwargs).to(device="cuda")
     unet = UNet3DConditionModel.from_pretrained_2d(config.base_model_path,
-                                                   motion_module_path=config.motion_module_path, subfolder="unet",
+                                                   motion_module_path=config.motion_module_path,
                                                    unet_additional_kwargs=config.model.unet_additional_kwargs).to(device="cuda")
 
     lmk_guider = Guider(conditioning_embedding_channels=320, block_out_channels=(16, 32, 96, 256)).to(device="cuda")
