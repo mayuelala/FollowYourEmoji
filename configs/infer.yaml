@@ -7,10 +7,10 @@ seed: 12580
 weight_dtype: 'fp16'  # [fp16, fp32]
 enable_zero_snr: True
 # pretrained model
-base_model_path: '/content/FollowYourEmoji/ckpts/base/unet'
-vae_model_path: '/content/FollowYourEmoji/ckpts/base/vae'
-image_encoder_path: '/content/FollowYourEmoji/ckpts/base/image_encoder'
-motion_module_path: '/content/FollowYourEmoji/ckpts/base/animatediff/mm_sd_v15_v2.ckpt'
+base_model_path: '/content/FollowYourEmoji/ckpt_models/base/unet'
+vae_model_path: '/content/FollowYourEmoji/ckpt_models/base/vae'
+image_encoder_path: '/content/FollowYourEmoji/ckpt_models/base/image_encoder'
+motion_module_path: '/content/FollowYourEmoji/ckpt_models/base/animatediff/mm_sd_v15_v2.ckpt'
 # for infer
 init_checkpoint: ''
 init_num: 0
