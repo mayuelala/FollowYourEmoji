@@ -1,3 +1,13 @@
+# About this fork
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/daswer123/FollowYourEmoji-colab/blob/main/follow_emoji_collab.ipynb)
+
+You can try FollowYourEmoji online by clicking one of the buttons above!
+
+In this fork I slightly modified the code to make it work under colab.
+
+Colab has been tested on the free version, everything works. Processing time is about 5 minutes for 30 frames.
+
 <!-- <h1 align="center"><span>Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation</strong></h1>
 
 <p id="authors" class="serif" align='center'>
