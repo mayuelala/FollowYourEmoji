@@ -1,50 +1,46 @@
-# train
-resolution_w: 512
-resolution_h: 512
-video_length: 30
-enable_xformers_memory_efficient_attention: True
-seed: 12580
-weight_dtype: 'fp16'  # [fp16, fp32]
-enable_zero_snr: True
-# pretrained model
-base_model_path: '/content/FollowYourEmoji/ckpt_models/base/unet'
-vae_model_path: '/content/FollowYourEmoji/ckpt_models/base/vae'
-image_encoder_path: '/content/FollowYourEmoji/ckpt_models/base/image_encoder'
-motion_module_path: '/content/FollowYourEmoji/ckpt_models/base/animatediff/mm_sd_v15_v2.ckpt'
-# for infer
+base_model_path: ./ckpt_models/base/unet
+enable_xformers_memory_efficient_attention: true
+enable_zero_snr: true
+image_encoder_path: ./ckpt_models/base/image_encoder
 init_checkpoint: ''
 init_num: 0
-# model
 model:
+  referencenet_additional_kwargs:
+    info_mode: addRefImg
   unet_additional_kwargs:
-    use_inflated_groupnorm: True
-    unet_use_cross_frame_attention: False
-    unet_use_temporal_attention: False
-    use_motion_module: True
+    attention_mode: SpatialAtten
+    motion_module_decoder_only: false
+    motion_module_kwargs:
+      attention_block_types:
+      - Temporal_Self
+      - Temporal_Self
+      num_attention_heads: 8
+      num_transformer_block: 1
+      temporal_attention_dim_div: 1
+      temporal_position_encoding: true
+      temporal_position_encoding_max_len: 32
+    motion_module_mid_block: true
     motion_module_resolutions:
     - 1
     - 2
     - 4
     - 8
-    motion_module_mid_block: True
-    motion_module_decoder_only: False
     motion_module_type: Vanilla
-    motion_module_kwargs:
-      num_attention_heads: 8
-      num_transformer_block: 1
-      attention_block_types:
-      - Temporal_Self
-      - Temporal_Self
-      temporal_position_encoding: True
-      temporal_position_encoding_max_len: 32
-      temporal_attention_dim_div: 1
-    attention_mode: SpatialAtten # SpatialAtten/ReferOnlyAtten
-  referencenet_additional_kwargs:
-    info_mode: addRefImg
+    unet_use_cross_frame_attention: false
+    unet_use_temporal_attention: false
+    use_inflated_groupnorm: true
+    use_motion_module: true
+motion_module_path: ./ckpt_models/base/animatediff/mm_sd_v15_v2.ckpt
+resolution_h: 512
+resolution_w: 512
 scheduler:
+  beta_end: 0.012
+  beta_schedule: scaled_linear
+  beta_start: 0.00085
+  clip_sample: false
   num_train_timesteps: 1000
-  beta_start:          0.00085
-  beta_end:            0.012
-  beta_schedule:       "scaled_linear"
-  steps_offset:        1
-  clip_sample:         false
+  steps_offset: 1
+seed: 12580
+vae_model_path: ./ckpt_models/base/vae
+video_length: 97
+weight_dtype: fp16
