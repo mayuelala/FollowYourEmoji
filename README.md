@@ -1,24 +1,3 @@
-<!-- <h1 align="center"><span>Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation</strong></h1>
-
-<p id="authors" class="serif" align='center'>
-    <a href="https://github.com/mayuelala">Yue Ma<sup>1*</sup></a>
-    <a href="https://yingqinghe.github.io/">Hongyu Liu<sup>1*<dag></sup></a>
-    <a href="https://follow-your-emoji.github.io/">Hongfa Wang<sup>2,3*</sup></a>
-    <a href="https://scholar.google.com/citations?user=DIpLfK4AAAAJ">Heng Pan<sup>2*</sup></a>
-    <a href="https://yingqinghe.github.io/">Yingqing He<sup>1</sup></a> <br>
-    <a href="https://0-scholar-google-com.brum.beds.ac.uk/citations?user=j3iFVPsAAAAJ&hl=zh-CN">Junkun Yuan<sup>2</sup></a>
-    <a href="https://ailingzeng.site/">Ailing Zeng<sup>2</sup></a>
-    <a href="https://follow-your-emoji.github.io/">Chengfei Cai<sup>2</sup></a>
-    <a href="https://scholar.google.com.hk/citations?user=9akH-n8AAAAJ&hl=en">Heung-Yeung Shum<sup>1,3</sup></a> 
-    <a href="https://scholar.google.com/citations?user=AjxoEpIAAAAJ&hl=zh-CN">Wei Liu<sup>2✝</sup></a>
-    <a href="https://cqf.io/">Qifeng Chen<sup>1✝</sup></a>
-    <br>
-
-</p>
-
-<a href='https://arxiv.org/abs/2403.08268'><img src='https://img.shields.io/badge/ArXiv-2403.08268-red'></a> 
-<a href='https://follow-your-click.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=mayuelala.FollowYourClick&left_color=green&right_color=red)  [![GitHub](https://img.shields.io/github/stars/mayuelala/FollowYourClick?style=social)](https://github.com/mayuelala/FollowYourClick) 
-</div> -->
 
 
 <div align="center">
@@ -27,7 +6,7 @@
 [Yue Ma*](https://mayuelala.github.io/), [Hongyu Liu*](https://kumapowerliu.github.io/), [Hongfa Wang*](https://github.com/mayuelala/FollowYourEmoji), [Heng Pan*](https://github.com/mayuelala/FollowYourEmoji), [Yingqing He](https://github.com/YingqingHe), [Junkun Yuan](https://0-scholar-google-com.brum.beds.ac.uk/citations?user=j3iFVPsAAAAJ&hl=zh-CN),  [Ailing Zeng](https://ailingzeng.site/), [Chengfei Cai](https://github.com/mayuelala/FollowYourEmoji), 
 [Heung-Yeung Shum](https://scholar.google.com.hk/citations?user=9akH-n8AAAAJ&hl=en), [Wei Liu](https://scholar.google.com/citations?user=AjxoEpIAAAAJ&hl=zh-CN) and [Qifeng Chen](https://cqf.io)
 
-<a href='https://arxiv.org/abs/2406.01900'><img src='https://img.shields.io/badge/ArXiv-2406.01900-red'></a> 
+<a href='https://arxiv.org/abs/2406.01900'><img src='https://img.shields.io/badge/ArXiv-2406.01900-red'></a> <a href='https://github.com/daswer123/FollowYourEmoji-colab/blob/main/README.md'><img src='https://colab.research.google.com/assets/colab-badge.svg'></a> 
 <a href='https://follow-your-emoji.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='assets/wechat_group.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a> ![visitors](https://visitor-badge.laobi.icu/badge?page_id=mayuelala.FollowYourEmoji&left_color=green&right_color=red)  [![GitHub](https://img.shields.io/github/stars/mayuelala/FollowYourEmoji?style=social)](https://github.com/mayuelala/FollowYourEmoji,pko) 
 </div>
 
