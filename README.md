@@ -63,6 +63,51 @@ pip install -r requirements.txt
 
 [FollowYourEmoji] We also provide our pretrained checkpoints in [Huggingface](https://huggingface.co/YueMafighting/FollowYourEmoji). you could download them and put them into checkpoints folder to inference our model.
 
+- base model: [lambdalabs/sd-image-variations-diffusers](https://huggingface.co/lambdalabs/sd-image-variations-diffusers)
+- vae: [sd-vae-ft-mse](https://huggingface.co/stabilityai/sd-vae-ft-mse)
+- AnimateDiff: [AnimateDiff](https://huggingface.co/guoyww/animatediff)
+
+Finally, these pretrained models should be organized as follows:
+
+```text
+pretrained_models
+├── AnimateDiff
+│   └── mm_sd_v15_v2.ckpt
+├── follow-your-emoji
+│   ├── lmk_guider.pth
+│   ├── referencenet.pth
+│   └── unet.pth
+├── sd-image-variations-diffusers
+│   ├── alias-montage.jpg
+│   ├── default-montage.jpg
+│   ├── earring.jpg
+│   ├── feature_extractor
+│   │   └── preprocessor_config.json
+│   ├── image_encoder
+│   │   ├── config.json
+│   │   └── pytorch_model.bin
+│   ├── inputs.jpg
+│   ├── model_index.json
+│   ├── README.md
+│   ├── safety_checker
+│   │   ├── config.json
+│   │   └── pytorch_model.bin
+│   ├── scheduler
+│   │   └── scheduler_config.json
+│   ├── unet
+│   │   ├── config.json
+│   │   └── diffusion_pytorch_model.bin
+│   ├── v1-montage.jpg
+│   ├── v2-montage.jpg
+│   └── vae
+│       ├── config.json
+│       └── diffusion_pytorch_model.bin
+└── sd-vae-ft-mse
+    ├── config.json
+    ├── diffusion_pytorch_model.bin
+    ├── diffusion_pytorch_model.safetensors
+    └── README.md
+```
 
 ### 3. Inference 🚀
 

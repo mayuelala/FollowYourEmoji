@@ -213,8 +213,6 @@ def main(args, config):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str, required=True)
-    parser.add_argument('--model_path', type=str, required=True)
-    parser.add_argument('--model_step', type=int, required=True)
     parser.add_argument('--output_path', type=str, required=True)
     parser.add_argument('--input_path', type=str, required=True)
     parser.add_argument('--lmk_path', type=str, required=True)
@@ -222,7 +220,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     config = OmegaConf.load(args.config)
-    config.init_checkpoint = args.model_path
-    config.init_num = args.model_step
 
     main(args, config)
