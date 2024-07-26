@@ -6,7 +6,6 @@ CUDA_VISIBLE_DEVICES=0 python3 -m torch.distributed.run \
     --nproc_per_node 1 \
     infer.py \
     --config ./configs/infer.yaml \
-    --model_path /path/to/model \
     --input_path ./data/images \
     --lmk_path ./data/mplmks \
     --output_path ./data/out

@@ -7,12 +7,12 @@ seed: 12580
 weight_dtype: 'fp16'  # [fp16, fp32]
 enable_zero_snr: True
 # pretrained model
-base_model_path: 'sd-image-variations-diffusers'
-vae_model_path: 'sd-vae-ft-mse'
-image_encoder_path: 'sd-image-variations-diffusers/image_encoder'
-motion_module_path: 'AnimateDiff/mm_sd_v15_v2.ckpt'
+base_model_path: 'pretrained_models/sd-image-variations-diffusers'
+vae_model_path: 'pretrained_models/sd-vae-ft-mse'
+image_encoder_path: 'pretrained_models/sd-image-variations-diffusers/image_encoder'
+motion_module_path: 'pretrained_models/AnimateDiff/mm_sd_v15_v2.ckpt'
 # for infer
-init_checkpoint: ''
+init_checkpoint: 'pretrained_models/follow-your-emoji'
 init_num: 0
 # model
 model:
