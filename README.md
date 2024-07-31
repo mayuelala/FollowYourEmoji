@@ -24,7 +24,7 @@
 
 <!-- - **[2024.07.29]** 🔥 Our paper is conditional accpeted by Siggraph Asia 2024! -->
 ## 📣 Updates
-- **[2024.07.31]** 🔥 Release `OpenXLab`, thanks for development!
+- **[2024.07.31]** 🔥 Release `OpenXLab`, thanks for [keyhsw](https://github.com/keyhsw) development!
 - **[2024.07.21]** 🔥 Release `Colab`, thanks for [daswer123](https://github.com/daswer123/FollowYourEmoji-colab/blob/main/README.md)!
 - **[2024.07.18]** 🔥 Release `inference code`, `config` and `checkpoints`!
 - **[2024.06.07]** 🔥 Release Paper and Project page!
