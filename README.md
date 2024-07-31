@@ -10,7 +10,7 @@
 <!-- <strong>is Conditional Accpeted by Siggraph Asia 2024</strong>-->
 
 <a href='https://arxiv.org/abs/2406.01900'><img src='https://img.shields.io/badge/ArXiv-2406.01900-red'></a> <a href='https://github.com/daswer123/FollowYourEmoji-colab/blob/main/README.md'><img src='https://colab.research.google.com/assets/colab-badge.svg'></a> 
-<a href='https://follow-your-emoji.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='assets/wechat_group.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a> ![visitors](https://visitor-badge.laobi.icu/badge?page_id=mayuelala.FollowYourEmoji&left_color=green&right_color=red)  [![GitHub](https://img.shields.io/github/stars/mayuelala/FollowYourEmoji?style=social)](https://github.com/mayuelala/FollowYourEmoji,pko) 
+<a href='https://follow-your-emoji.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='assets/wechat_group.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a> ![visitors](https://visitor-badge.laobi.icu/badge?page_id=mayuelala.FollowYourEmoji&left_color=green&right_color=red) [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/FollowYourEmoji) [![GitHub](https://img.shields.io/github/stars/mayuelala/FollowYourEmoji?style=social)](https://github.com/mayuelala/FollowYourEmoji,pko)  
 </div>
 
 <!-- <table class="center">
@@ -22,9 +22,9 @@
 
 </table > -->
 
-
-## 📣 Updates
 <!-- - **[2024.07.29]** 🔥 Our paper is conditional accpeted by Siggraph Asia 2024! -->
+## 📣 Updates
+- **[2024.07.31]** 🔥 Release `OpenXLab`, thanks for development!
 - **[2024.07.21]** 🔥 Release `Colab`, thanks for [daswer123](https://github.com/daswer123/FollowYourEmoji-colab/blob/main/README.md)!
 - **[2024.07.18]** 🔥 Release `inference code`, `config` and `checkpoints`!
 - **[2024.06.07]** 🔥 Release Paper and Project page!
