@@ -179,4 +179,11 @@ If you find Follow-Your-Emoji useful for your research, welcome to 🌟 this rep
   journal={arXiv preprint arXiv:2406.01900},
   year={2024}
 }
+
+@article{ma2025follow,
+  title={Follow-your-emoji-faster: Towards efficient, fine-controllable, and expressive freestyle portrait animation},
+  author={Ma, Yue and Yan, Zexuan and Liu, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and others},
+  journal={arXiv preprint arXiv:2509.16630},
+  year={2025}
+}
 ```
