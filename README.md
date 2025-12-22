@@ -24,7 +24,7 @@
 
 
 ## Citation 💖
-If you find our project is useful for your research, welcome to 🌟 this repo and cite our **two** relative work using the following BibTeX:
+If you find our project is useful for your research, welcome to 🌟 this repo and cite our **two** relative works using the following BibTeX:
 ```bibtex
 @article{ma2024follow,
   title={Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation},
