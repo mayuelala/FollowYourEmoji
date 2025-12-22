@@ -22,6 +22,25 @@
 
 </table > -->
 
+
+## Citation 💖
+If you find our project is useful for your research, welcome to 🌟 this repo and cite our **two** relative work using the following BibTeX:
+```bibtex
+@article{ma2024follow,
+  title={Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation},
+  author={Ma, Yue and Liu, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Liu, Wei and others},
+  journal={arXiv preprint arXiv:2406.01900},
+  year={2024}
+}
+
+@article{ma2025follow,
+  title={Follow-your-emoji-faster: Towards efficient, fine-controllable, and expressive freestyle portrait animation},
+  author={Ma, Yue and Yan, Zexuan and Liu, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and others},
+  journal={arXiv preprint arXiv:2509.16630},
+  year={2025}
+}
+```
+
 <!-- - **[2024.07.29]** 🔥 Our paper is conditional accpeted by Siggraph Asia 2024! -->
 ## 📣 Updates
 - **[2025.04.16]** 🔥 We propose Taylor-Interpolated Cache (TIC) for faster generation up to 2.4× lossless acceleration, codes are released!
@@ -170,20 +189,4 @@ CUDA_VISIBLE_DEVICES=0 python3 -m torch.distributed.run \
 
 [Follow-Your-Emoji](https://github.com/mayuelala/FollowYourEmoji): Fine-Controllable and Expressive Freestyle Portrait Animation.
   
-## Citation 💖
-If you find Follow-Your-Emoji useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
-```bibtex
-@article{ma2024follow,
-  title={Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation},
-  author={Ma, Yue and Liu, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Liu, Wei and others},
-  journal={arXiv preprint arXiv:2406.01900},
-  year={2024}
-}
 
-@article{ma2025follow,
-  title={Follow-your-emoji-faster: Towards efficient, fine-controllable, and expressive freestyle portrait animation},
-  author={Ma, Yue and Yan, Zexuan and Liu, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and others},
-  journal={arXiv preprint arXiv:2509.16630},
-  year={2025}
-}
-```
